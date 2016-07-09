@@ -15,6 +15,9 @@
 # limitations under the License.
 #
 
+# Use low fps bootanimation
+USE_LOWFPS_BOOTANI := true
+
 # Inherit from Omni custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)

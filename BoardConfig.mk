@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+TARGET_SPECIFIC_HEADER_PATH := device/htc/golfu/include
 BOARD_VENDOR := htc
 
 # Platform
@@ -46,12 +48,10 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/htc/golfu
-TARGET_KERNEL_CONFIG := golfu_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-cortex-linux-gnueabi-linaro
+TARGET_KERNEL_CONFIG := omni_golfu_defconfig
+#TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-cortex-linux-gnueabi-linaro
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null androidboot.hardware=golfu
 BOARD_KERNEL_BASE := 0x13000000
-
-TARGET_SPECIFIC_HEADER_PATH := device/htc/golfu/include
 
 # Audio
 TARGET_QCOM_AUDIO_VARIANT := caf

@@ -96,6 +96,11 @@ PRODUCT_PACKAGES += \
 #    libqcomfm_jni \
 #    qcom.fmradio
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger \
+    charger_res_images
+
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \

@@ -137,6 +137,11 @@ TARGET_QCOM_LEGACY_OMX := true
 # Touch screen compatibility for JB
 BOARD_USE_LEGACY_TOUCHSCREEN := true
 
+# Charging mode
+BOARD_LPM_BOOT_ARGUMENT_NAME := androidboot.mode
+BOARD_LPM_BOOT_ARGUMENT_VALUE := offmode_charging
+#BOARD_CHARGER_RES := device/htc/golfu/res/charger
+
 # Custom liblights
 TARGET_PROVIDES_LIBLIGHT := true
 
